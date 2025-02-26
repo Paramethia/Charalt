@@ -1,0 +1,148 @@
+<MDBoxLayout>:
+    padding: 20
+    spacing: 25
+
+<Header>:
+    font_name: 'fonts/Sigmar-Regular'
+    color: 0.68, 0.85, 0.91, 1
+    font_size: 47
+    size_hint: 1, None
+
+<MDLabel>:
+    halign: 'center'
+    size_hint: 1, None
+
+<InputT>:
+    size_hint: 0.8, 0.4
+    pos_hint: {'center_x': 0.5}
+    mode: 'rectangle'
+    line_color_normal: 0.68, 0.85, 0.91, 0.8
+    line_color_focus: 0.50, 0.81, 0.91, 0.8 #0.76, 0.60, 0.42, 0.8
+    hint_text_color_normal: 0.68, 0.85, 0.91, 0.5
+    hint_text_color_focus: 0.50, 0.81, 0.91, 0.5 #0.76, 0.60, 0.42, 0.8
+    text_color_focus: 0.50, 0.81, 0.91, 1 #0.76, 0.60, 0.42, 1
+    cursor_color: 0.50, 0.81, 0.91, 1 #0.76, 0.60, 0.42, 1
+    helper_text: "Max length is 800"
+    helper_text_color: 0.8, 0.8, 0.8, 0.8
+    helper_text_mode: 'on_focus'
+
+<Error>:
+    theme_text_color: 'Custom'
+    text_color: 0.78, 0.09, 0.09, 1
+    font_style: 'Body2'
+    size_hint: 1, None
+    height: 14
+
+<SubmitB>:
+    font_style: 'Button'
+    pos_hint: {'center_x': 0.5}
+    line_color: 0.68, 0.85, 0.91, 0.8
+    text_color: 0.05, 0.05, 0.05, 1
+    md_bg_color: 0.68, 0.85, 0.91, 0.8
+    size_hint: 0.14, None
+
+#Alteration section
+
+<InputShow>:
+    size_hint: 0.11, None
+    height: 40
+    line_color: 0.68, 0.85, 0.91, 0.8
+    text_color: 0.68, 0.85, 0.91, 0.8
+    pos_hint: {'center_x': 0.5}
+
+<InputCon>:
+    size_hint: 0.7, None
+    
+<MDFloatLayout>:
+    size_hint: 1, None
+    height: 50
+
+<BackB>:
+    pos_hint: {'center_x': 0.1, 'center_y': 0.95}
+    line_color: 0.68, 0.85, 0.91, 0.8
+    text_color: 0.05, 0.05, 0.05, 1
+    md_bg_color: 0.68, 0.85, 0.91, 0.8
+    size_hint: None, None
+    size: 50, 80
+
+<InputF>:
+    orientation: 'horizontal'
+    size_hint: None, None
+    width: 420
+    height: 50
+    pos_hint: {'center_x': 0.5}
+    
+<AltInput>:
+    helper_text: "Click/tap here"
+    helper_text_mode: 'persistent'
+    font_name:'Rubik'
+    size_hint: None, None
+    width: 200
+    height: 45
+    #halign: 'center'
+    multiline: False
+    line_color_normal: 0.68, 0.85, 0.91, 0.8
+    #line_color_focus: 0.50, 0.81, 0.91, 0.8
+    hint_text_color_normal: 0.68, 0.85, 0.91, 0.5
+    #hint_text_color_focus: 0.50, 0.81, 0.91, 0.5
+    #text_color_focus: 0.50, 0.81, 0.91, 1
+    cursor_color: 0.50, 0.81, 0.91, 1
+
+<AltBCon>:
+    orientation: 'lr-tb'
+    size_hint: 0.75, None
+    height: self.minimum_height
+    spacing: 17
+    pos_hint: {'center_x': 0.5}
+
+<AlterB>:
+    font_style: 'Button'
+    line_color: 0.68, 0.85, 0.91, 0.8
+    text_color: 0.05, 0.05, 0.05, 1
+    md_bg_color: 0.68, 0.85, 0.91, 0.8
+    size_hint: 0.2, None
+    height: 40
+
+<InfoT>:
+    font_style: 'Body1'
+    theme_text_color: 'Custom'
+    text_color: 1, 1, 1, 1
+    size_hint: 1, None
+    height: 45
+    halign: 'center'
+
+<OutputCon>:
+    orientation: 'vertical'
+    #spacing: 12
+    padding: 12
+    size_hint: 0.8, 0.35
+    pos_hint: {'center_x': 0.5}
+    canvas.before:
+        Color:
+            rgba: 0.8, 0.8, 0.8, 0.7 #0.68, 0.85, 0.91, 0.5
+        Line:
+            width: 2
+            rounded_rectangle: [self.x, self.y, self.width, self.height, 20]
+
+<OutputHeader>:
+    font_size: 44
+    #font_style: 'H4'
+    #theme_text_color: 'Custom'
+    #text_color: 1, 1, 1, 1
+    font_name: 'fonts/GrechenFuemen-Regular'
+    size_hint: 1, 0.3
+    #height: 55
+
+<Output>:
+    font_style: 'Subtitle1'
+    theme_text_color: 'Custom'
+    text_color: 0.84, 0.84, 0.84, 1 #0.72, 0.71, 0.35, 1
+    pos_hint: {'center_x': 0.5}
+
+<CopyB>:
+    size_hint: 0.15, None
+    height: 45
+    theme_text_color: 'Custom'
+    text_color: 0.8, 0.8, 0.8 , 1
+    line_color: 0.8, 0.8, 0.8 , 1
+    pos_hint: {'center_x': 0.5}
